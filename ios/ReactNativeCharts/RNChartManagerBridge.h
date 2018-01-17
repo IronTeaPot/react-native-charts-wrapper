@@ -16,6 +16,8 @@ RCT_EXPORT_VIEW_PROPERTY(legend, NSDictionary) \
 RCT_EXPORT_VIEW_PROPERTY(chartBackgroundColor, NSInteger) \
 RCT_EXPORT_VIEW_PROPERTY(chartDescription, NSDictionary) \
 RCT_EXPORT_VIEW_PROPERTY(noDataText, NSString) \
+RCT_EXPORT_VIEW_PROPERTY(noDataTextColor, NSInteger) \
+RCT_EXPORT_VIEW_PROPERTY(noDataTextFontSize, CGFloat) \
 RCT_EXPORT_VIEW_PROPERTY(touchEnabled, BOOL) \
 RCT_EXPORT_VIEW_PROPERTY(dragDecelerationEnabled, BOOL) \
 RCT_EXPORT_VIEW_PROPERTY(dragDecelerationFrictionCoef, NSNumber) \

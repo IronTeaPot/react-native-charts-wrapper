@@ -32,8 +32,9 @@ open class RNChartViewBase: UIView, ChartViewDelegate {
     }
     
     func setData(_ data: NSDictionary) {
+        chart.clear()
+      
         let json = BridgeUtils.toJson(data)
-        
         chart.data = dataExtract.extract(json)
     }
     
@@ -141,6 +142,14 @@ open class RNChartViewBase: UIView, ChartViewDelegate {
     
     func setNoDataText(_ noDataText: String) {
         chart.noDataText = noDataText
+    }
+  
+    func setNoDataTextColor(_ color: Int) {
+        chart.noDataTextColor = RCTConvert.uiColor(color);
+    }
+  
+    func setNoDataTextFontSize(_ fontSize: CGFloat) {
+        chart.noDataFont = NSUIFont(name: "HelveticaNeue", size: fontSize)
     }
     
     func setTouchEnabled(_ touchEnabled: Bool) {
