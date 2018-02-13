@@ -62,7 +62,7 @@ class RNPieChartView: RNChartViewBase {
             #else
                 let paragraphStyle = NSParagraphStyle.default.mutableCopy() as! NSMutableParagraphStyle
             #endif
-            paragraphStyle.lineBreakMode = NSLineBreakMode.byTruncatingTail
+            paragraphStyle.lineBreakMode = NSLineBreakMode.byCharWrapping
             paragraphStyle.alignment = .center
 
 
