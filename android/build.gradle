@@ -12,8 +12,14 @@ android {
     }
 }
 
+allprojects {
+    repositories {
+        maven { url 'https://jitpack.io' }
+    }
+}
+
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     compile 'com.facebook.react:react-native:0.20.+'
-    compile 'com.github.PhilJay:MPAndroidChart:v3.0.2'
+    compile 'com.github.IronTeaPot:MPAndroidChart:master-SNAPSHOT'
 }
