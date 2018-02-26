@@ -60,4 +60,12 @@ class RNRadarChartView: RNYAxisChartViewBase {
     func setDrawWeb(_ enabled: Bool) {
         _chart.drawWeb = enabled
     }
+
+    func setInnerWebColor(_ innerWebColor: Int) {
+      _chart.innerWebColor = RCTConvert.uiColor(innerWebColor)
+    }
+
+    func setInnerWebLineWidth(_ innerWebLineWidth: Int) {
+      _chart.innerWebLineWidth = innerWebLineWidth
+    }
 }
