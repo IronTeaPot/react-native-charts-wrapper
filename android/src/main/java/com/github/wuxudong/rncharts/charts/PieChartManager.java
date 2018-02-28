@@ -5,6 +5,7 @@ import com.facebook.react.bridge.ReadableType;
 import com.facebook.react.uimanager.ThemedReactContext;
 import com.facebook.react.uimanager.annotations.ReactProp;
 import com.github.wuxudong.rncharts.charts.CustomPieChart;
+import com.github.wuxudong.rncharts.charts.PieChart;
 import com.github.mikephil.charting.data.PieEntry;
 import com.github.wuxudong.rncharts.data.DataExtract;
 import com.github.wuxudong.rncharts.data.PieDataExtract;
