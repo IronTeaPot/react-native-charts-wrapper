@@ -4,7 +4,7 @@ import com.facebook.react.bridge.ReadableMap;
 import com.facebook.react.bridge.ReadableType;
 import com.facebook.react.uimanager.ThemedReactContext;
 import com.facebook.react.uimanager.annotations.ReactProp;
-import com.github.mikephil.charting.charts.PieChart;
+import com.github.wuxudong.rncharts.charts.CustomPieChart;
 import com.github.mikephil.charting.data.PieEntry;
 import com.github.wuxudong.rncharts.data.DataExtract;
 import com.github.wuxudong.rncharts.data.PieDataExtract;
@@ -21,7 +21,7 @@ public class PieChartManager extends ChartBaseManager<PieChart, PieEntry> {
 
     @Override
     protected PieChart createViewInstance(ThemedReactContext reactContext) {
-        PieChart pieChart =  new PieChart(reactContext);
+        PieChart pieChart =  new CustomPieChart(reactContext);
         pieChart.setOnChartValueSelectedListener(new RNOnChartValueSelectedListener(pieChart));
         pieChart.setOnChartGestureListener(new RNOnChartGestureListener(pieChart));
         return pieChart;
