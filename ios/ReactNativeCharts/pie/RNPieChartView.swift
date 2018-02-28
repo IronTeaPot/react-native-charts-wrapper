@@ -19,7 +19,7 @@ class RNPieChartView: RNChartViewBase {
   
     override init(frame: CoreGraphics.CGRect) {
 
-        self._chart = PieChartView(frame: frame)
+        self._chart = MyPieChartView(frame: frame)
         self._dataExtract = PieDataExtract()
 
         super.init(frame: frame)
